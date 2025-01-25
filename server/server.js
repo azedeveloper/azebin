@@ -50,6 +50,9 @@ function makeid(length) {
 app.post('/pastes', (req, res) => {
     const { title, content } = req.body;
     const identifier = makeid(5);
+    if(title.length > 200 || content.length > 10000) {
+        return res.status(400).json({ error: 'Title or content too long' });
+    }
     const query = `
         INSERT INTO pastes (title, content, identifier, timestamp)
         VALUES (?, ?, ?, datetime('now'))
