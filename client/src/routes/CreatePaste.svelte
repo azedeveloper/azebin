@@ -1,5 +1,5 @@
 <script>
-  import { push } from 'svelte-spa-router'; // Import the router's push function
+  import { push } from 'svelte-spa-router'; 
 
   let title = '';
   let content = '';
@@ -18,7 +18,7 @@
       if (!response.ok) throw new Error('Failed to save paste.');
 
       const data = await response.json();
-      push(`/paste/${data.id}`);
+      push(`/${data.id}`);
     } catch (err) {
       error = err.message;
     }
