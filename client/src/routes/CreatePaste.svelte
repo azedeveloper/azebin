@@ -26,7 +26,11 @@
 </script>
 
 <div class="max-w-2xl mx-auto p-4">
-  <h1 class="text-2xl font-bold mb-4">Create a Paste</h1>
+  <div class="title">
+    <img src="favicon.png" alt="">
+    <p>AzeBin</p>
+  </div>
+  <h1 class="text-2xl font-bold mb-4"></h1>
   {#if error}
     <p class="text-red-500 mb-4">{error}</p>
   {/if}

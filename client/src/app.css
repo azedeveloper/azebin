@@ -146,4 +146,17 @@ textarea {
     background-color: rgb(48, 48, 48);
   }
 
-  
+  .title {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    user-select: none;
+  }
+
+  .title img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }

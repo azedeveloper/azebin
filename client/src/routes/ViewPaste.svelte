@@ -2,6 +2,7 @@
   import { onMount, afterUpdate } from 'svelte';
   import hljs from 'highlight.js'; 
   import 'highlight.js/styles/base16/windows-10.css';
+  import { push } from 'svelte-spa-router';
 
   export let params; 
   let paste = null;
@@ -48,6 +49,10 @@
 </script>
 
 <div class="max-w-2xl mx-auto p-4">
+  <div class="title">
+    <img src="favicon.png" alt="">
+    <p>AzeBin</p>
+  </div>
   {#if error}
     <p class="text-red-500">{error}</p>
   {:else if paste}
