@@ -7,7 +7,7 @@
 
   const submitPaste = async () => {
     try {
-      const response = await fetch('http://patricia-deliver-chest-auto.trycloudflare.com/pastes', {
+      const response = await fetch('https://patricia-deliver-chest-auto.trycloudflare.com/pastes', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
