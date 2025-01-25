@@ -2,10 +2,20 @@ const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const { rateLimit } = require('express-rate-limit');
 
 const app = express();
 const port = 3000;
 
+const limiter = rateLimit({
+	windowMs: 15 * 60 * 1000, 
+	limit: 100,
+	standardHeaders: 'draft-8', 
+	legacyHeaders: false, 
+    message: 'Too many requests, please try again later.',
+})
+
+app.use(limiter);
 app.use(bodyParser.json());
 app.use(cors());
 
