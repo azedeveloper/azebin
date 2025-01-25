@@ -11,7 +11,7 @@
 
   onMount(async () => {
     try {
-      const response = await fetch(`http://localhost:3000/pastes/${params.id}`);
+      const response = await fetch(`http://patricia-deliver-chest-auto.trycloudflare.com/pastes/${params.id}`);
       if (!response.ok) throw new Error('Failed to load paste.');
 
       paste = await response.json();
