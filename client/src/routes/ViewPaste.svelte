@@ -49,7 +49,7 @@
 </script>
 
 <div class="max-w-2xl mx-auto p-4">
-  <div class="title">
+  <div class="title" onclick="window.location.href='/'">
     <img src="favicon.png" alt="">
     <p>AzeBin</p>
   </div>

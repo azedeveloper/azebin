@@ -121,6 +121,10 @@ textarea {
     margin-top: -1.25rem;
   }
 
+  .mb--4 {
+    margin-bottom: -1rem;
+  }
+
   
   /* Miscellaneous */
   .whitespace-pre-line {
@@ -159,4 +163,20 @@ textarea {
     width: 20px;
     height: 20px;
     margin-right: 5px;
+  }
+
+  a {
+    color: magenta;
+  }
+
+  .seperator {
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    
+  }
+
+  .sub {
+    font-size: 20px;
   }

@@ -26,11 +26,14 @@
 </script>
 
 <div class="max-w-2xl mx-auto p-4">
-  <div class="title">
+  <div class="title" onclick="window.location.href='/'">
     <img src="favicon.png" alt="">
     <p>AzeBin</p>
   </div>
-  <h1 class="text-2xl font-bold mb-4"></h1>
+  <h2 class="mb--4">Welcome to AzeBin</h2>
+  <p id="subtitle" class="mb-4">An open-sourced paste website, feel free to contribute on <a href="https://github.com/azedeveloper/azebin">GitHub</a>!</p>
+  <p class="sub"><b>Create a Paste:</b></p>
+  <div class="seperator"/>
   {#if error}
     <p class="text-red-500 mb-4">{error}</p>
   {/if}
